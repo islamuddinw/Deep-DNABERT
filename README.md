@@ -13,8 +13,66 @@ sequence-analysis
 epigenetics
 jupyter-notebook
 python
-# Complete Repository Structure
+
+# Deep-DNABERT Repository Structure
+
+```text
 Deep-DNABERT/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── environment.yml
+├── setup.py
+├── CITATION.cff
+├── .gitignore
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+│
+├── datasets/
+│   ├── benchmark/
+│   │   ├── Benchmarking Positive Dataset.txt
+│   │   └── Benchmarking Negative Dataset.txt
+│   │
+│   ├── independent/
+│   │   ├── Independent Positive Dataset.txt
+│   │   └── Independent Negative Dataset.txt
+│   │
+│   └── csv_features/
+│       ├── TACC/
+│       ├── PseNAC/
+│       ├── PseDNC/
+│       ├── SCPseTNC/
+│       ├── DNABERT/
+│       └── Hybrid/
+│
+├── notebooks/
+│   ├── NB_Classifier.ipynb
+│   ├── KNN_Classifier.ipynb
+│   ├── DT_Classifier.ipynb
+│   ├── SVM_Classifier.ipynb
+│   ├── RF_Classifier.ipynb
+│   ├── XGBoost_Classifier.ipynb
+│   ├── AdaBoost_Classifier.ipynb
+│   ├── Deep_DNABERT_Classifier.ipynb
+│   ├── Deep_DNABERT_Full_DNN_Notebook.ipynb
+│   └── Deep_DNABERT_All_Classifiers.ipynb
+│
+├── src/
+│   ├── preprocessing/
+│   ├── feature_extraction/
+│   ├── feature_selection/
+│   ├── classifiers/
+│   ├── evaluation/
+│   ├── visualization/
+│   └── utils/
+│
+├── models/
+│   ├── trained_models/
+│   │   ├── nb_model.pkl
+│   │   ├── knn_model.pkl
+│   │   ├── dt_model.pkl
+│   │   ├── svm_model.pkl
 │   │   ├── rf_model.pkl
 │   │   ├── xgboost_model.pkl
 │   │   ├── adaboost_model.pkl
@@ -26,32 +84,9 @@ Deep-DNABERT/
 │
 ├── outputs/
 │   ├── figures/
-│   │   ├── figure1_workflow.png
-│   │   ├── figure2_shap_summary.png
-│   │   ├── figure3_dependence_plot.png
-│   │   ├── figure4_dnn_architecture.png
-│   │   ├── figure5_loss_curve.png
-│   │   ├── figure6_hyperparameter_analysis.png
-│   │   ├── figure7_classifier_comparison.png
-│   │   ├── figure8_confusion_matrix.png
-│   │   ├── figure9_roc_5fold.png
-│   │   ├── figure10_roc_10fold.png
-│   │   └── figure11_independent_testing.png
-│   │
 │   ├── tables/
-│   │   ├── table1_dataset_summary.csv
-│   │   ├── table2_feature_dimensions.csv
-│   │   ├── table3_hyperparameters.csv
-│   │   ├── table4_classifier_results.csv
-│   │   └── table5_statistical_analysis.csv
-│   │
 │   ├── logs/
-│   │   ├── training_log.txt
-│   │   └── evaluation_log.txt
-│   │
 │   └── predictions/
-│       ├── prediction_results.csv
-│       └── probability_scores.csv
 │
 ├── manuscript/
 │   ├── manuscript.docx
@@ -65,3 +100,4 @@ Deep-DNABERT/
     ├── reproducibility.md
     ├── usage.md
     └── dataset_description.md
+```
